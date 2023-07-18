@@ -1,0 +1,62 @@
+.book-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.all-data-container {
+    width: 95%;
+    height: 95%;
+    border: solid 1px;
+}
+
+.img-data-container {
+    width: 100%;
+    height: 70%;
+    display: flex;
+}
+.img-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.5rem;
+}
+.img-container img{
+    
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+}
+.data-book-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.data-book-container h5{
+    padding-top: 1rem;
+}
+.sinopsis{
+    text-align: center;
+    /* height: 15%;; */
+}
+.button-container{
+    height: 10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button-container button{
+    position: relative;
+    width: 70%;
+    text-align: left;
+    border-radius: 1rem;
+}
+.button-container i{
+    position: absolute;
+    right: 10%;
+}
