@@ -1,8 +1,21 @@
-import React from 'react'
+import { React, useState, useContext } from 'react'
 import '../styles/Header.css'
-import { FaFacebook,FaTwitter,FaInstagram } from 'react-icons/fa'
-import {PiMagnifyingGlassPlusBold} from 'react-icons/pi'
+import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa'
+import { PiMagnifyingGlassPlusBold } from 'react-icons/pi'
+import { BookCategoryContext } from '../auth/CategoryBookContext'
 function Header() {
+    const {booksProperty, setBooksProperty} = useContext(BookCategoryContext);
+    /**
+     * 
+     * @param {React.ChangeEvent} event 
+     */
+    const handleInputSearchAuthor = (event,) => {
+        console.log(event.target.value);
+        setBooksProperty({
+            category:"author",
+            dataCategory: event.target.value.toLowerCase()
+        })
+    }
     return (
         <header>
             <div id="logo-container" >
@@ -12,13 +25,13 @@ function Header() {
                 <p> Book editorial</p>
             </div>
             <div id="search-container" >
-                <i><PiMagnifyingGlassPlusBold/></i>
-                <input type="text" placeholder="enter author..."></input>
+                <i><PiMagnifyingGlassPlusBold /></i>
+                <input type="text" placeholder="enter author..." onChange={handleInputSearchAuthor}></input>
             </div>
             <nav >
                 <i> <FaFacebook /></i>
-                <i><FaTwitter/></i>
-                <i><FaInstagram/></i>
+                <i><FaTwitter /></i>
+                <i><FaInstagram /></i>
             </nav>
         </header>
     )

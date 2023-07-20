@@ -1,5 +1,5 @@
 /*Barra de filtro para búsqueda*/
-nav {    
+nav {
     text-align: center;
 }
 
@@ -18,7 +18,7 @@ nav ul {
     background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%);
     background: -webkit-linear-gradient(top, #efefef 0%, #bbbbbb 100%);
     box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.15);
-    padding: 0 20px;
+    padding-left: 0;
     border-radius: 10px;
     list-style: none;
     position: relative;
@@ -48,7 +48,7 @@ nav ul li:hover a {
 
 nav ul li a {
     display: block;
-    padding: 25px 40px;
+    padding: 1rem 1rem;
     color: #757575;
     text-decoration: none;
 }
@@ -88,53 +88,69 @@ nav ul ul ul {
     display: flex;
     justify-content: center;
     align-items: center;
-   padding-top: 1rem;
+    padding-top: 1rem;
     border-bottom: 1px solid black;
-   
+
 }
 
 h5 {
     font-weight: bold;
 }
 
+.category-button {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    padding: 0.5rem 1rem;
+}
+
+/*FILTRO POR PÁGINAS*/
+.box {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 0 0.5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.box .slider {
+    height: 2rem;
+    width: 15rem;
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.box .slider input {
+    height: 100%;
+    width: 100%;    
+    outline: none;
+    background-color: #f2f2f2;
+    border-radius: 1.5rem;
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+}
+.box .value{
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: sans-serif;
+    color:orange;
+    width: 55px;
+    text-align: center;
+}
+
 /*Seccion de libros y carrito*/
 section {
     height: 40rem;
     border: solid 1px black;
-    margin-top: 5rem;
     padding: 0 !important;
     margin: 0 !important;
+
 }
 
 .row {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-#mybooks-section {
-
-    display: none;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-#mybooks-container {
-    width: 90%;
-    height: 90%;
-    border: solid 1px black;
-    text-align: center;
-}
-
-h4 {
-    padding: 1rem 0;
-    height: 15%;
-    border-bottom: solid 0.5px;
-}
-
-#mybooks {
-    height: 75%;
 }
 
 #books-container {
