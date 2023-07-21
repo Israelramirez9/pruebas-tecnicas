@@ -25,8 +25,10 @@ function Header() {
                 <p> Book editorial</p>
             </div>
             <div id="search-container" >
-                <i><PiMagnifyingGlassPlusBold /></i>
-                <input type="text" placeholder="enter author..." onChange={handleInputSearchAuthor}></input>
+                <label for="input-search-by-author">
+                    <i ><PiMagnifyingGlassPlusBold /></i>
+                </label>
+                <input type="text" placeholder="enter author..." onChange={handleInputSearchAuthor} id="input-search-by-author"></input>
             </div>
             <nav >
                 <i className='icon-facebook'> <FaFacebook /></i>

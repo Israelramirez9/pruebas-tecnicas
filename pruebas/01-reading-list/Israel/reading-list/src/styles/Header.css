@@ -8,7 +8,9 @@ header{
 header i{
     font-size: 2rem;
 }
-
+label{
+    cursor:pointer;
+}
 #logo-container{
     display: flex;
     flex-direction: column;
@@ -49,7 +51,7 @@ header nav{
     color:aqua;
 }
 .icon-twitter:hover{
-    color: white;
+    color: rgb(0, 195, 255);
     cursor: pointer;
 }
 .icon-instagram{

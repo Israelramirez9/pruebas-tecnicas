@@ -12,9 +12,7 @@ nav ul li:hover>ul {
     display: block;
 }
 
-#text-filtrar-por a {
-    cursor: none;
-}
+
 
 nav ul {
     background: #efefef;
@@ -74,9 +72,9 @@ nav ul ul li {
 #filter-search-container {
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-   padding-top: 0.8rem;
+    padding-top: 0.8rem;
     gap: 1rem;
     background-color: #4267B2;
 }
@@ -126,10 +124,12 @@ h5 {
     color: white;
 
 }
-#container-filter-amount-books{
+
+#container-filter-amount-books {
     display: flex;
     gap: 1rem;
 }
+
 /*FILTRO POR PÁGINAS*/
 .box {
     border-radius: 0.5rem;
@@ -206,7 +206,7 @@ section {
 
 .books-main-container>div {
     height: 24rem;
-    
+
 }
 
 @media screen and (max-width:1000px) {
@@ -220,10 +220,12 @@ section {
     .books-main-container {
         grid-template-columns: repeat(1, 1fr);
     }
-    .box .slider{
-        width:4rem;
+
+    .box .slider {
+        width: 4rem;
     }
-    #filter-search-container{
+
+    #filter-search-container {
         display: flex;
         flex-direction: column;
     }
