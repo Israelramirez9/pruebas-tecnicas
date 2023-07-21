@@ -26,7 +26,7 @@ function MyBooks({ books, deleteBookOfMyCart }) {
           )}
 
       </div>
-      <div>
+      <div id="container-counterBooks">
         <h5 id="total">Libros a llevar: {books.length}</h5>
         
       </div>

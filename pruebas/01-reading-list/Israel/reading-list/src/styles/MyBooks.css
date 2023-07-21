@@ -5,17 +5,25 @@
     justify-content: center;
     flex-direction: column;
 }
+
 #mybooks-container {
     width: 90%;
-    height: 90%;
-    border: solid 1px black;
+
+    border: solid 4px rgb(0, 69, 148);
+    border-radius: 1rem;
     text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    color: white;
 }
 
 h4 {
-    padding: 1rem 0;
-    height: 15%;
-    border-bottom: solid 0.5px;
+    background-color: #4267B2;
+    font-weight: bold;
+    padding: 2rem 0;
+
+    margin: 0;
+    border-radius: 0.5rem 0.5rem 0 0 ;
+    border-bottom: solid 4px rgb(0, 69, 148);
 }
 
 #mybooks {
@@ -24,35 +32,45 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+   
+
 }
-#total {
-    border-top: solid 1px;
-    padding-top: 1rem;
-    padding-left: 2rem;
+#delete-book {
     text-align: center;
 }
-#delete-book{
-    text-align: center;
-}
-.img-data-container-mybooks{
+
+.img-data-container-mybooks {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
 }
-.img-container-mybooks{
-    
+
+.img-container-mybooks {
+
     width: 75%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.img-container-mybooks img{
+
+.img-container-mybooks img {
     width: 100%;
     object-fit: contain;
 }
-#title-mybooks{
+
+#title-mybooks {
     margin: 0;
     padding-top: 1rem;
+}
+#container-counterBooks{
+    height: 4rem;
+    color:white;
+    text-align: center;
+    border-top: solid 4px rgb(0, 69, 148);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4267B2;
+    border-radius: 0 0 0.5rem 0.5rem;
 }

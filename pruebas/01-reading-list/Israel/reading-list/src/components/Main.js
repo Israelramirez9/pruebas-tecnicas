@@ -5,7 +5,7 @@ import axios from 'axios'
 import MyBooks from './MyBooks'
 import ShowMyBookSection from './ShowMyBookSection'
 import { BookCategoryContext } from '../auth/CategoryBookContext'
-
+import { FaFilter } from 'react-icons/fa';
 function Main() {
 
 
@@ -105,7 +105,7 @@ function Main() {
 
                 <nav>
                     <ul>
-                        <li>
+                        <li id="text-filtrar-por">
                             <a href="#">Filtrar por:</a>
                         </li>
                         <li>
@@ -124,7 +124,7 @@ function Main() {
                                 }
                             </ul>
                         </li>
-                        <li><a>Páginas</a>
+                        <li><a id="text-paginas">Páginas</a>
                             <ul>
                                 <li>
                                     <div className='box'>
@@ -144,13 +144,16 @@ function Main() {
 
                     </ul>
                 </nav>
-
-
-                <div id="delete-filters-button">
-                    <button onClick={deletefilters}>Eliminar Filtros</button>
+                <div id="container-filter-amount-books">
+                    <div id="delete-filters-button">
+                        <button onClick={deletefilters}>Eliminar Filtros</button>
+                        <i><FaFilter /></i>
+                    </div>
+                    <div id="text-found-books">
+                        Libros encontrados:{booksFiltered.filter((obj) => obj.book.isSelected === false).length}
+                    </div>
                 </div>
             </div>
-            {/* {/*SECCIONES(MI LISTA DE LIBROS/LIBROS DISPONIBLES)*/}
 
             <div id="sections-container" className='row'>
                 <section id="mybooks-section" className="col-4">

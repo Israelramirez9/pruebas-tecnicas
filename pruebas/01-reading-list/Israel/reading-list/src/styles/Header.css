@@ -1,19 +1,23 @@
 header{
     align-items: center;
-    justify-content: center;
-    display: flex;
     justify-content: space-around;
-    border-bottom: solid 1px black;
+    display: flex; 
+   /* background-color: #4267B2; */
     width: 100%;
 }
+header i{
+    font-size: 2rem;
+}
+
 #logo-container{
     display: flex;
     flex-direction: column;
     
+    
 }
 #img-container{
     width: 5rem;
-    height: 3rem;
+    height: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,11 +26,7 @@ header img{
     
     width: 100%;
 }
-header > div{
-    padding: 1rem;
-}
-header nav{
-      
+header nav{      
     display: flex;    
     gap:1rem;
     right: 20%;
@@ -34,6 +34,30 @@ header nav{
 #search-container{
    display: flex;   
     gap:1rem;
+}
+#search-container input{
+    border-radius: 1rem;
+}
+.icon-facebook{
+    color: blue;
+}
+.icon-facebook:hover{
+    color:white;
+    cursor: pointer;
+}
+.icon-twitter{
+    color:aqua;
+}
+.icon-twitter:hover{
+    color: white;
+    cursor: pointer;
+}
+.icon-instagram{
+    color:blueviolet;
+}
+.icon-instagram:hover{
+    color: white;
+    cursor: pointer;
 }
 @media screen and (max-width:500px) {
     input{

@@ -6,8 +6,11 @@
 
 .all-data-container {
     width: 95%;
-    height: 95%;
-    border: solid 1px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-bottom: 1rem;
+    padding:0.5rem;
+    border-radius: 1rem;
+    color: black;
 }
 
 .img-data-container {
