@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/pruebas-tecnicas/static/css/main.74be7fae.css",
-    "main.js": "/pruebas-tecnicas/static/js/main.447dde55.js",
+    "main.js": "/pruebas-tecnicas/static/js/main.522ef081.js",
     "index.html": "/pruebas-tecnicas/index.html",
     "main.74be7fae.css.map": "/pruebas-tecnicas/static/css/main.74be7fae.css.map",
-    "main.447dde55.js.map": "/pruebas-tecnicas/static/js/main.447dde55.js.map"
+    "main.522ef081.js.map": "/pruebas-tecnicas/static/js/main.522ef081.js.map"
   },
   "entrypoints": [
     "static/css/main.74be7fae.css",
-    "static/js/main.447dde55.js"
+    "static/js/main.522ef081.js"
   ]
 }
