@@ -4,10 +4,19 @@ import '../styles/Footer.css'
 function Footer() {
     return (
         <footer>
-            <div><h4>Encontranos en:</h4></div>
-            <div><h4>Abierto de:</h4></div>
-            <div><h4>E-mail:</h4></div>
-            <div><h4>Redes:</h4></div>
+            <div id="title-footer">
+                <h4>Encontranos en:</h4>
+            </div>
+            <div id="title-footer">
+                <h4>Abierto de:</h4></div>
+            <div id="title-footer">
+                <h4>E-mail:
+
+                </h4>
+            </div>
+            <div id="title-footer">
+                <h4>Redes:</h4>
+            </div>
             <div>
                 <p>Palermo Hollywood
                     <br />Recoleta

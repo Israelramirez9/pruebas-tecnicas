@@ -7,10 +7,10 @@ function Filter({ booksCategoryNav, booksFiltered, handleCategory, handleSlider,
             <nav>
                 <ul>
                     <li id="text-filtrar-por">
-                        <a href="#">Filtrar por:</a>
+                        <a href="1">Filtrar por:</a>
                     </li>
                     <li>
-                        <a href="#">Género</a>
+                        <a href="2">Género</a>
                         <ul>
                             {
                                 booksCategoryNav.map((value) =>
@@ -25,12 +25,12 @@ function Filter({ booksCategoryNav, booksFiltered, handleCategory, handleSlider,
                             }
                         </ul>
                     </li>
-                    <li><a id="text-paginas">Páginas</a>
+                    <li><a href="1" id="text-paginas">Páginas</a>
                         <ul>
                             <li>
                                 <div className='box'>
                                     <div className='slider'>
-                                        <input id="range" type="range" min="0" max="2000" step="50" onChange={handleSlider} />
+                                        <input id="range" type="range" min="0" max="1500" step="50" onChange={handleSlider} />
                                     </div>
                                     <div className='value'>
                                         100
@@ -48,7 +48,7 @@ function Filter({ booksCategoryNav, booksFiltered, handleCategory, handleSlider,
             <div id="container-filter-amount-books">
                 <div id="delete-filters-button">
                     <button onClick={deletefilters}>Eliminar Filtros</button>
-                    <i><FaFilter /></i>
+                    <i><FaFilter id="icon-filter"/></i>
                 </div>
                 <div id="text-found-books">
                     Libros encontrados:{booksFiltered.filter((obj) => obj.book.isSelected === false).length}

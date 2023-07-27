@@ -10,7 +10,7 @@ function Header() {
      * @param {React.ChangeEvent<HTMLInputElement>} event 
      */
     const handleInputSearchAuthor = (event,) => {
-        console.log(event.target.value);
+        
         setBooksProperty({
             category: "author",
             dataCategory: event.target.value.toLowerCase()
@@ -25,7 +25,7 @@ function Header() {
                 <p> Book editorial</p>
             </div>
             <div id="search-container" >
-                <label for="input-search-by-author">
+                <label htmlFor="input-search-by-author">
                     <i ><PiMagnifyingGlassPlusBold /></i>
                 </label>
                 <input type="text" placeholder="enter author..." onChange={handleInputSearchAuthor} id="input-search-by-author"></input>

@@ -98,23 +98,26 @@ h5 {
     position: absolute;
     top: 20%;
     right: 10%;
+    z-index: 10;
 }
 
 #delete-filters-button button {
+   
     padding: 0.5rem;
     border-radius: 1rem;
-    background-color: rgb(236, 101, 101);
+    background-color: rgb(240, 83, 83);
     margin-bottom: 1rem;
     padding-right: 2rem;
 }
 
 #delete-filters-button button:hover {
     background-color: black;
-    color: red;
+    color:red;
+
 
 }
 
-#delete-filters-button button:hover i {
+#delete-filters-button:hover i {
     color: red;
 }
 

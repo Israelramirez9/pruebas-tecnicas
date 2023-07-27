@@ -17,6 +17,13 @@ footer h4 {
 
 footer>div {
     padding: 1rem;
+
+}
+
+#title-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .icon {
@@ -41,7 +48,7 @@ footer>div {
 
     }
 
-    h4 {
+    footer h4 {
         font-size: 0.5rem;
     }
 
