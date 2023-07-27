@@ -39,14 +39,15 @@ function Main() {
 
     useEffect(() => {
         let data = localStorage.getItem("books");
-        const booksFromStorage = JSON.parse(data);
-        if (booksFromStorage.length !== 0) {
+        
+        if (!data) {
+            const booksFromStorage = JSON.parse(data);
             setBooks(booksFromStorage);
             const categoryObject = [];
             booksFromStorage.forEach((obj) => {
                 categoryObject[obj.book.genre] = "";
             })
-            console.log("aqui")
+
             setBooksCategoryNav(Object.keys(categoryObject));
             setBooksProperty(JSON.parse(localStorage.getItem("booksProperty")));
         } else {
@@ -61,21 +62,27 @@ function Main() {
                         obj.book.isSelected = false;
                         return obj;
                     }))
-                })
+                    localStorage.setItem("books", JSON.stringify(response.data.library.map((obj) => {
+                        obj.book.isSelected = false;
+                        return obj;
+                    })))
+                }
+                )
                 .catch(e => console.log(e));
+
         }
 
     }, [])
 
     useEffect(() => {
-       
+
         localStorage.setItem("books", JSON.stringify(books))
         localStorage.setItem("booksProperty", JSON.stringify(booksProperty))
     }, [booksProperty])
 
     const handleCategory = (value, property) => {
-     
-        setBooksProperty({            
+
+        setBooksProperty({
             category: property,
             dataCategory: value
         })
@@ -102,7 +109,7 @@ function Main() {
         setBooks(updateBooks);
     }
     const deletefilters = () => {
-        setBooksProperty({            
+        setBooksProperty({
             category: null,
             dataCategory: null
         })

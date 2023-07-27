@@ -7,10 +7,10 @@ function Filter({ booksCategoryNav, booksFiltered, handleCategory, handleSlider,
             <nav>
                 <ul>
                     <li id="text-filtrar-por">
-                        <a href="1">Filtrar por:</a>
+                        <a href="#1">Filtrar por:</a>
                     </li>
                     <li>
-                        <a href="2">Género</a>
+                        <a href="#2">Género</a>
                         <ul>
                             {
                                 booksCategoryNav.map((value) =>
@@ -25,7 +25,7 @@ function Filter({ booksCategoryNav, booksFiltered, handleCategory, handleSlider,
                             }
                         </ul>
                     </li>
-                    <li><a href="1" id="text-paginas">Páginas</a>
+                    <li><a href="#1" id="text-paginas">Páginas</a>
                         <ul>
                             <li>
                                 <div className='box'>
